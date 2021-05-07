@@ -52,7 +52,5 @@ function draw() {
     
      game.end();
    }
-   fill("white")
-   text("Player1score: " + score, 20,50);
-   text("Player2score: " + score, 20,100);
+  
 }
