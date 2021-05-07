@@ -53,6 +53,9 @@ class Game{
                          textSize(25);
                          text(allPlayers[plr].name ,x-25,y+25);
                         }
+                     fill("white");
+                  text("Player 1 :" +allPlayers.player1.score, 50, 50); 
+                  text("Player 2 :" +allPlayers.player2.score, 50, 100);
                     }
                 
                 if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
@@ -93,23 +96,9 @@ class Game{
                         }
                       }
                    }
-                /* if (player1.isTouching(fruitGroup)){
-                      fruitGroup.destroyEach()
-                      "Player1score: " + 1, 20,100}
-
-                 if(player2.isTouching(fruitGroup)){
-                    fruitGroup.destroyEach()
-                    "Player2score: " + 1, 20,100
-               }*/
-                 if(index === player.index){
-                     fill("white"); textSize(25); 
-                     text(allPlayers[plr].name, x-25, y+25)
+               
                      
-                     textSize(25);
-                     fill("white");
-                  text("Player 1 :" +allPlayers.player1.score, 50, 50); 
-                  text("Player 2 :" +allPlayers.player2.score, 50, 100);
-                 }  }
+                   }
 
     end(){
        console.log("Game Ended");
